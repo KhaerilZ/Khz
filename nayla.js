@@ -719,7 +719,7 @@ if (!q) return reply("Masukkan Text")
 if (!isOwner) reply("Only owner")
 if (m.messages[0].type !== 'conversation') return reply("Gunakan Pesan ber-type text")
 Object.keys(daftar).forEach((i) => {
-nayla.sendMessage(daftar[i].id, {text:"[ *BROADCAST* ]\n\n• *Message* : " + q + "\n• *Type* : text"},{quoted:nay1})
+nayla.sendMessage(daftar[i].id, {text:"text"},{quoted:nay1})
 })
 reply("Sukses Broadcast Ke orang yang terdaftar di database bot")
 break
